@@ -2,7 +2,7 @@
   "id": "FEAT-002",
   "type": "feat",
   "description": "Build all page features: Form Input (SPV), Campaign Board with filters, Checklist with progress, and Timeline view",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "Create app/form-input/page.tsx - SPV product-to-campaign form with fields: Campaign (dropdown from options.campaign), ID Produk (text), Nama Produk (text), Skema Promo (dropdown from options.skemaPromo), Jenis Promo (dropdown from options.jenisPromo), Klasifikasi Produk (dropdown from options.klasifikasi). Each dropdown has an 'add new' option that shows a text input to add a custom value. On submit, POST to /api/entries. Show role guard - only SPV role can submit.",
     "Create components/CreatableSelect.tsx - a reusable dropdown component that shows existing options plus a '+ Tambah Baru' option at the bottom. When clicked, shows an inline text input to type new value. On confirm, calls PUT /api/options to persist the new option, then selects it.",
@@ -25,5 +25,5 @@
     "cd /projects/sandbox/Workflow-Campaign-Promo && npm run build"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "All 6 pages/components built and npm run build passes cleanly. CreatableSelect component is reusable across form fields. Dashboard fetches summary data from 3 APIs. Checklist uses role context to control edit permissions."
 }
