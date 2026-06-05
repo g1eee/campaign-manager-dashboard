@@ -1,0 +1,24 @@
+{
+  "project_type": "Next.js 14 (App Router) with Tailwind CSS",
+  "language": "TypeScript",
+  "build_system": "npm with next build",
+  "test_framework": "none (no test framework configured)",
+  "build_command": "cd /projects/sandbox/Workflow-Campaign-Promo && npm run build",
+  "test_command": "none",
+  "verification_instructions": "Run npm run build and confirm it exits with code 0",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "cd /projects/sandbox/Workflow-Campaign-Promo && npm install",
+  "environment_constraints": "OPEN_INTERNET - full network access. Node.js v22 available via nvm.",
+  "contribution_requirements": "No CONTRIBUTING.md. Standard Next.js project conventions.",
+  "key_patterns": "- App Router: pages in app/ directory as page.tsx files. - 'use client' directive for client components. - Tailwind CSS for styling (tailwind.config.ts). - @/* path alias maps to project root. - Existing layout.tsx wraps all pages with RoleProvider and Navbar. - The new dashboard page should be created as a new route (e.g., app/promo-dashboard/page.tsx) to avoid breaking the existing page.tsx.",
+  "relevant_files": [
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/globals.css",
+    "tailwind.config.ts",
+    "components/Navbar.tsx",
+    "components/RoleContext.tsx",
+    "package.json"
+  ],
+  "directory_structure": "app/ - Next.js app router pages and API routes. components/ - Shared React components. data/ - JSON data files. scripts/ - Python utility scripts."
+}

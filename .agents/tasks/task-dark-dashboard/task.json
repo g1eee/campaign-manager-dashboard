@@ -1,0 +1,7 @@
+{
+  "task_id": "task-dark-dashboard",
+  "task_description": "Build a dark-themed promo dashboard page with left side navigation containing tabs (Tab Promo, Banner, Toko, IG Story, Host Live, Ads CPAS, Timeline) and editable tables for each tab. Users can type text into table cells and add rows. The design follows a dark navy/purple theme similar to Seller Analytics dashboards.",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001", "FEAT-002"],
+  "blocked_reason": null
+}
