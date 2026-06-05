@@ -2,7 +2,7 @@
   "id": "FEAT-002",
   "type": "feat",
   "description": "Build all page features: Form Input (SPV), Campaign Board with filters, Checklist with progress, and Timeline view",
-  "status": "pending",
+  "status": "in_progress",
   "steps": [
     "Create app/form-input/page.tsx - SPV product-to-campaign form with fields: Campaign (dropdown from options.campaign), ID Produk (text), Nama Produk (text), Skema Promo (dropdown from options.skemaPromo), Jenis Promo (dropdown from options.jenisPromo), Klasifikasi Produk (dropdown from options.klasifikasi). Each dropdown has an 'add new' option that shows a text input to add a custom value. On submit, POST to /api/entries. Show role guard - only SPV role can submit.",
     "Create components/CreatableSelect.tsx - a reusable dropdown component that shows existing options plus a '+ Tambah Baru' option at the bottom. When clicked, shows an inline text input to type new value. On confirm, calls PUT /api/options to persist the new option, then selects it.",
