@@ -1,0 +1,142 @@
+[
+  {
+    "campaign": "TWINDATE",
+    "banner": "TOKO",
+    "prepare": "KATEGORI TOKO",
+    "keterangan": "KATEGORI UNTUK PRODUK YANG MASUK PROMOSI",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "TWINDATE",
+    "banner": null,
+    "prepare": "CHAT BROADCAST",
+    "keterangan": "JAM 9 MALAM",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "TWINDATE",
+    "banner": "IG STORY",
+    "prepare": "JADWAL POSTING",
+    "keterangan": "PRIME TIME ORANG LIHAT STORY",
+    "timelinePush": "H-2, H-1, H"
+  },
+  {
+    "campaign": "TWINDATE",
+    "banner": "ADS META",
+    "prepare": "IMG / VIDEO HARD SELLING",
+    "keterangan": "CPAS",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "TWINDATE",
+    "banner": "LIVE",
+    "prepare": "INFO PROMO & ETALASE PRODUK",
+    "keterangan": "SHARE INFO KE HOST LIVE: ATUR LIST PRODUK, BANNER & PROMO",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "PAYDAY",
+    "banner": "TOKO",
+    "prepare": "KATEGORI TOKO",
+    "keterangan": "KATEGORI UNTUK PRODUK YANG MASUK PROMOSI",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "PAYDAY",
+    "banner": null,
+    "prepare": "CHAT BROADCAST",
+    "keterangan": "JAM 9 MALAM",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "PAYDAY",
+    "banner": "IG STORY",
+    "prepare": "JADWAL POSTING",
+    "keterangan": "PRIME TIME ORANG LIHAT STORY",
+    "timelinePush": "H-2, H-1, H"
+  },
+  {
+    "campaign": "PAYDAY",
+    "banner": "ADS META",
+    "prepare": "IMG / VIDEO HARD SELLING",
+    "keterangan": "CPAS",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "PAYDAY",
+    "banner": "LIVE",
+    "prepare": "INFO PROMO & ETALASE PRODUK",
+    "keterangan": "SHARE INFO KE HOST LIVE: ATUR LIST PRODUK, BANNER & PROMO",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "RABU XTRA",
+    "banner": "TOKO",
+    "prepare": "KATEGORI TOKO",
+    "keterangan": "KATEGORI UNTUK PRODUK YANG MASUK PROMOSI",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "RABU XTRA",
+    "banner": null,
+    "prepare": "CHAT BROADCAST",
+    "keterangan": "JAM 9 MALAM",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "RABU XTRA",
+    "banner": "IG STORY",
+    "prepare": "JADWAL POSTING",
+    "keterangan": "PRIME TIME ORANG LIHAT STORY",
+    "timelinePush": "H-2, H-1, H"
+  },
+  {
+    "campaign": "RABU XTRA",
+    "banner": "ADS META",
+    "prepare": "IMG / VIDEO HARD SELLING",
+    "keterangan": "CPAS",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "RABU XTRA",
+    "banner": "LIVE",
+    "prepare": "INFO PROMO & ETALASE PRODUK",
+    "keterangan": "SHARE INFO KE HOST LIVE: ATUR LIST PRODUK, BANNER & PROMO",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "SHOPEE FASHION DAY",
+    "banner": "TOKO",
+    "prepare": "KATEGORI TOKO",
+    "keterangan": "KATEGORI UNTUK PRODUK YANG MASUK PROMOSI",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "SHOPEE FASHION DAY",
+    "banner": null,
+    "prepare": "CHAT BROADCAST",
+    "keterangan": "JAM 9 MALAM",
+    "timelinePush": "H-1"
+  },
+  {
+    "campaign": "SHOPEE FASHION DAY",
+    "banner": "IG STORY",
+    "prepare": "JADWAL POSTING",
+    "keterangan": "PRIME TIME ORANG LIHAT STORY",
+    "timelinePush": "H-2, H-1, H"
+  },
+  {
+    "campaign": "SHOPEE FASHION DAY",
+    "banner": "ADS META",
+    "prepare": "IMG / VIDEO HARD SELLING",
+    "keterangan": "CPAS",
+    "timelinePush": "H-3"
+  },
+  {
+    "campaign": "SHOPEE FASHION DAY",
+    "banner": "LIVE",
+    "prepare": "INFO PROMO & ETALASE PRODUK",
+    "keterangan": "SHARE INFO KE HOST LIVE: ATUR LIST PRODUK, BANNER & PROMO",
+    "timelinePush": "H-3"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "campaign": [
+    {
+      "value": "twindate",
+      "label": "TWINDATE"
+    },
+    {
+      "value": "rabu-xtra",
+      "label": "RABU XTRA"
+    },
+    {
+      "value": "payday",
+      "label": "PAY DAY"
+    },
+    {
+      "value": "sfd",
+      "label": "SHOPEE FASHION DAY"
+    }
+  ],
+  "skemaPromo": [
+    "BUY 2 GET MOBIL",
+    "BUY 2 DISC 100%\nBUY 3 DISC 200%\nBUY 4 DISC 300%"
+  ],
+  "jenisPromo": [
+    "FREE GIFT",
+    "BBLH"
+  ],
+  "klasifikasi": [
+    "FAST MOVING",
+    "MODERATE",
+    "SLOW MOVING"
+  ]
+}

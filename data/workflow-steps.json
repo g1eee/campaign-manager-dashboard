@@ -1,0 +1,92 @@
+[
+  {
+    "step": 0,
+    "role": "spv",
+    "inputType": "checklist",
+    "text": "role spv share timeline promosi di bulan terkait ke role marketing"
+  },
+  {
+    "step": 1,
+    "role": "spv",
+    "inputType": "dropdown",
+    "text": "role spv pilih campaign (slider tapi ada opsi menambahkan opsi slider baru)"
+  },
+  {
+    "step": 2,
+    "role": "spv",
+    "inputType": "text",
+    "text": "role spv mengisi id produk (teks)"
+  },
+  {
+    "step": 3,
+    "role": "spv",
+    "inputType": "text",
+    "text": "role spv mengisi nama produk (teks)"
+  },
+  {
+    "step": 4,
+    "role": "spv",
+    "inputType": "dropdown",
+    "text": "role spv mengisi skema promo: contoh buy 2 get free hijab (slider tapi ada opsi menambahkan opsi slider baru)"
+  },
+  {
+    "step": 5,
+    "role": "spv",
+    "inputType": "dropdown",
+    "text": "role spv menandai jenis promo tersebut. contoh free gift (slider tapi ada opsi menambahkan opsi slider baru)"
+  },
+  {
+    "step": 6,
+    "role": "spv",
+    "inputType": "dropdown",
+    "text": "ketika mengisi atau memilih id produk, langsung otomatis terklasifikasi produk itu fast moving, moderate atau slow moving (slider tapi ada opsi menambahkan opsi slider baru)"
+  },
+  {
+    "step": 7,
+    "role": "admin",
+    "inputType": "external",
+    "text": "role admin calculate skema promo dengan biaya/potongan setelahnya meminta approve ke role spv (di spreadsheet)"
+  },
+  {
+    "step": 8,
+    "role": "admin",
+    "inputType": "checklist",
+    "text": "role admin setting promo di marketplace setelah di-approve role spv (check list box)"
+  },
+  {
+    "step": 8,
+    "role": "admin",
+    "inputType": "checklist",
+    "text": "role admin request banner toko, ig story, ads cpas, dan banner live streaming ke role desainer (check list box)"
+  },
+  {
+    "step": 9,
+    "role": "admin",
+    "inputType": "checklist",
+    "text": "role admin prepare toko: membuat kategori promosi yang sudah disetting & chat broadcast (check list box)"
+  },
+  {
+    "step": 10,
+    "role": "desainer",
+    "inputType": "checklist",
+    "text": "role desainer mengirimkan desain yang sudah di-request role admin"
+  },
+  {
+    "step": 11,
+    "role": "admin",
+    "inputType": "checklist",
+    "text": "role admin reminder role marketing: share kebutuhan jadwal posting, desain atau timeline kreatif naik di sosmed (check list box)"
+  },
+  {
+    "step": 12,
+    "role": "admin",
+    "inputType": "checklist",
+    "text": "role admin share info promo, produk dan banner kreatif ke host live streaming (check list box)"
+  },
+  {
+    "step": 13,
+    "role": "spv",
+    "inputType": "checklist",
+    "text": "role spv setting kreatif di cpas meta (check list box)"
+  }
+]

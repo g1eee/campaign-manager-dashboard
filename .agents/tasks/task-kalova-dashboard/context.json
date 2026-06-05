@@ -1,0 +1,30 @@
+{
+  "project_type": "Next.js 14 App Router dashboard with TypeScript and Tailwind CSS",
+  "language": "TypeScript",
+  "build_system": "npm with Next.js CLI",
+  "test_framework": "none configured - validation via build",
+  "build_command": "cd /projects/sandbox/Workflow-Campaign-Promo && npm run build",
+  "test_command": "cd /projects/sandbox/Workflow-Campaign-Promo && npm run build",
+  "verification_instructions": "1. Run npm install, 2. Run npm run build to verify no TS/build errors",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "cd /projects/sandbox/Workflow-Campaign-Promo && npm install",
+  "environment_constraints": "OPEN_INTERNET network - full access. Node.js 22 available via nvm.",
+  "contribution_requirements": "None specified - greenfield prototype",
+  "key_patterns": "Next.js App Router with app/ directory, Tailwind CSS for styling, JSON files in /data/ for persistence, path alias @/* mapped to project root",
+  "relevant_files": [
+    "package.json",
+    "tsconfig.json",
+    "tailwind.config.ts",
+    "next.config.js",
+    "app/globals.css",
+    "data/products.json",
+    "data/workflow-steps.json",
+    "data/campaigns.json",
+    "data/entries.json",
+    "data/options.json",
+    "data/timeline.json",
+    "data/workflow-matrix.json",
+    "data/checklists.json"
+  ],
+  "directory_structure": "app/ - Next.js app router pages and layouts, data/ - JSON seed data files, scripts/ - Python extraction scripts"
+}

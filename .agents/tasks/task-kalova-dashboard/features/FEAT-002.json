@@ -1,0 +1,29 @@
+{
+  "id": "FEAT-002",
+  "type": "feat",
+  "description": "Build all page features: Form Input (SPV), Campaign Board with filters, Checklist with progress, and Timeline view",
+  "status": "pending",
+  "steps": [
+    "Create app/form-input/page.tsx - SPV product-to-campaign form with fields: Campaign (dropdown from options.campaign), ID Produk (text), Nama Produk (text), Skema Promo (dropdown from options.skemaPromo), Jenis Promo (dropdown from options.jenisPromo), Klasifikasi Produk (dropdown from options.klasifikasi). Each dropdown has an 'add new' option that shows a text input to add a custom value. On submit, POST to /api/entries. Show role guard - only SPV role can submit.",
+    "Create components/CreatableSelect.tsx - a reusable dropdown component that shows existing options plus a '+ Tambah Baru' option at the bottom. When clicked, shows an inline text input to type new value. On confirm, calls PUT /api/options to persist the new option, then selects it.",
+    "Create app/campaign-board/page.tsx - Table view of entries grouped/filtered by campaign. Columns: Bulan, Campaign, ID Produk, Nama Produk, Skema Promo, Jenis Promo, Klasifikasi Produk, Status (checklist completion %). Filter tabs/dropdown for each campaign. Fetch from /api/entries and /api/checklists.",
+    "Create app/checklist/page.tsx - Shows workflow steps from workflow-steps.json as checklist items. Group by role. Each user (based on current role) can check/uncheck tasks assigned to their role. Checklist state stored per campaign (global). Progress bar showing completion %. Calls GET/PUT /api/checklists.",
+    "Create app/timeline/page.tsx - Visual timeline card/table showing timeline.json data (periode + campaign). Style with colored badges per campaign type.",
+    "Update app/page.tsx (Dashboard) to show summary: total entries count, campaigns count, checklist progress percentage, upcoming campaign from timeline. Fetch data from API routes.",
+    "Ensure all pages use 'use client' where needed for interactivity, and properly handle loading states",
+    "Verify npm run build succeeds with all pages"
+  ],
+  "acceptance_criteria": [
+    "npm run build completes without errors",
+    "Form Input page renders all fields with creatable dropdowns",
+    "Campaign Board displays entries in a filterable table",
+    "Checklist page shows all 15 workflow steps grouped by role with check/uncheck functionality",
+    "Timeline page renders all 11 timeline entries",
+    "Dashboard shows summary statistics"
+  ],
+  "verification": [
+    "cd /projects/sandbox/Workflow-Campaign-Promo && npm run build"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

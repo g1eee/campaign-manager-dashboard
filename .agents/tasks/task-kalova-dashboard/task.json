@@ -1,0 +1,7 @@
+{
+  "task_id": "task-kalova-dashboard",
+  "task_description": "Build a complete Next.js 14 dashboard for KALOVA campaign promo workflow management with role-based views, form input, campaign board, checklist tracking, and timeline view",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001", "FEAT-002"],
+  "blocked_reason": null
+}

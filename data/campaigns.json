@@ -1,0 +1,26 @@
+[
+  {
+    "id": "twindate",
+    "title": "TWINDATE",
+    "rule": "FAST MOVING & MODERATE WAJIB, SISANYA SLOW MOVING",
+    "sheet": "TWINDATE"
+  },
+  {
+    "id": "rabu-xtra",
+    "title": "RABU XTRA",
+    "rule": "FAST MOVING & MODERATE WAJIB, SISANYA SLOW MOVING",
+    "sheet": "RABU XTRA"
+  },
+  {
+    "id": "payday",
+    "title": "PAY DAY",
+    "rule": "FAST MOVING & MODERATE WAJIB, SISANYA SLOW MOVING",
+    "sheet": "PAY DAY"
+  },
+  {
+    "id": "sfd",
+    "title": "S FASHION DAY",
+    "rule": "SLOW MOVING & DEADSTOK DOMINAN, SISANYA FAST MOV / MODERATE",
+    "sheet": "SFD"
+  }
+]
