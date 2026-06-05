@@ -2,7 +2,7 @@
   "id": "FEAT-001",
   "type": "chore",
   "description": "Install dependencies and set up the base Next.js app shell with layout, navigation, and role switching",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "Run npm install in /projects/sandbox/Workflow-Campaign-Promo",
     "Create app/layout.tsx with root HTML structure, metadata (title: KALOVA Campaign Promo), import globals.css",
@@ -30,5 +30,5 @@
     "cd /projects/sandbox/Workflow-Campaign-Promo && npm run build"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "Build succeeds cleanly. Added .gitignore for node_modules and .next. All API routes registered, layout with RoleProvider and Navbar working."
 }
