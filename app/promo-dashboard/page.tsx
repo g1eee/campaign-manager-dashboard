@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
+import Link from 'next/link';
 
 const tabs = [
   'Tab Promo',
@@ -41,38 +42,75 @@ const tabColumns: Record<string, string[]> = {
   Timeline: ['Tanggal', 'Nama Promosi'],
 };
 
-function createEmptyRows(tab: string, count: number): string[][] {
-  const colCount = tabColumns[tab].length;
-  return Array.from({ length: count }, () => Array(colCount).fill(''));
+interface TableRow {
+  id: string;
+  cells: string[];
 }
 
-function initTableData(): Record<string, string[][]> {
-  const data: Record<string, string[][]> = {};
+let rowIdCounter = 0;
+function generateRowId(): string {
+  rowIdCounter += 1;
+  return `row-${rowIdCounter}-${Date.now()}`;
+}
+
+function createEmptyRows(tab: string, count: number): TableRow[] {
+  const colCount = tabColumns[tab].length;
+  return Array.from({ length: count }, () => ({
+    id: generateRowId(),
+    cells: Array(colCount).fill(''),
+  }));
+}
+
+function initTableData(): Record<string, TableRow[]> {
+  const data: Record<string, TableRow[]> = {};
   for (const tab of tabs) {
     data[tab] = createEmptyRows(tab, 3);
   }
   return data;
 }
 
+const months = [
+  'Januari',
+  'Februari',
+  'Maret',
+  'April',
+  'Mei',
+  'Juni',
+  'Juli',
+  'Agustus',
+  'September',
+  'Oktober',
+  'November',
+  'Desember',
+];
+
+const years = ['2024', '2025', '2026'];
+
 export default function PromoDashboardPage() {
   const [activeTab, setActiveTab] = useState<string>('Tab Promo');
-  const [tableData, setTableData] = useState<Record<string, string[][]>>(initTableData);
+  const [tableData, setTableData] = useState<Record<string, TableRow[]>>(initTableData);
+  const [brand, setBrand] = useState<string>('KALOVA');
+  const [month, setMonth] = useState<string>('Januari');
+  const [year, setYear] = useState<string>('2024');
 
-  const handleCellChange = (rowIdx: number, colIdx: number, value: string) => {
+  const handleCellChange = useCallback((rowId: string, colIdx: number, value: string) => {
     setTableData((prev) => {
       const newData = { ...prev };
-      const rows = newData[activeTab].map((row) => [...row]);
-      rows[rowIdx][colIdx] = value;
-      newData[activeTab] = rows;
+      newData[activeTab] = newData[activeTab].map((row) =>
+        row.id === rowId ? { ...row, cells: row.cells.map((c, i) => (i === colIdx ? value : c)) } : row
+      );
       return newData;
     });
-  };
+  }, [activeTab]);
 
   const handleAddRow = () => {
     setTableData((prev) => {
       const newData = { ...prev };
       const colCount = tabColumns[activeTab].length;
-      newData[activeTab] = [...newData[activeTab], Array(colCount).fill('')];
+      newData[activeTab] = [
+        ...newData[activeTab],
+        { id: generateRowId(), cells: Array(colCount).fill('') },
+      ];
       return newData;
     });
   };
@@ -81,32 +119,48 @@ export default function PromoDashboardPage() {
   const rows = tableData[activeTab];
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-[#0f0f23]">
+    <div className="flex flex-col h-full bg-[#0f0f23]">
       {/* HEADER */}
       <header className="flex items-center justify-between px-6 bg-[#0d1b2a]" style={{ height: '60px' }}>
-        <span className="text-white text-xl font-bold tracking-wide">KALOVA</span>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/"
+            className="text-gray-400 hover:text-white text-sm transition-colors"
+            title="Back to Dashboard"
+          >
+            &larr; Dashboard
+          </Link>
+          <span className="text-white text-xl font-bold tracking-wide">KALOVA</span>
+        </div>
         <div className="flex items-center gap-3">
-          <select className="bg-[#1e293b] border border-gray-600 text-white rounded px-3 py-1.5 text-sm outline-none">
+          <select
+            value={brand}
+            onChange={(e) => setBrand(e.target.value)}
+            className="bg-[#1e293b] border border-gray-600 text-white rounded px-3 py-1.5 text-sm outline-none"
+          >
             <option>KALOVA</option>
           </select>
-          <select className="bg-[#1e293b] border border-gray-600 text-white rounded px-3 py-1.5 text-sm outline-none">
-            <option>Januari</option>
-            <option>Februari</option>
-            <option>Maret</option>
-            <option>April</option>
-            <option>Mei</option>
-            <option>Juni</option>
-            <option>Juli</option>
-            <option>Agustus</option>
-            <option>September</option>
-            <option>Oktober</option>
-            <option>November</option>
-            <option>Desember</option>
+          <select
+            value={month}
+            onChange={(e) => setMonth(e.target.value)}
+            className="bg-[#1e293b] border border-gray-600 text-white rounded px-3 py-1.5 text-sm outline-none"
+          >
+            {months.map((m) => (
+              <option key={m} value={m}>
+                {m}
+              </option>
+            ))}
           </select>
-          <select className="bg-[#1e293b] border border-gray-600 text-white rounded px-3 py-1.5 text-sm outline-none">
-            <option>2024</option>
-            <option>2025</option>
-            <option>2026</option>
+          <select
+            value={year}
+            onChange={(e) => setYear(e.target.value)}
+            className="bg-[#1e293b] border border-gray-600 text-white rounded px-3 py-1.5 text-sm outline-none"
+          >
+            {years.map((y) => (
+              <option key={y} value={y}>
+                {y}
+              </option>
+            ))}
           </select>
         </div>
       </header>
@@ -142,7 +196,7 @@ export default function PromoDashboardPage() {
                   {columns.map((col) => (
                     <th
                       key={col}
-                      className="px-3 py-3 text-left text-gray-300 text-xs uppercase tracking-wider font-medium border-b border-gray-700 whitespace-nowrap"
+                      className="px-3 py-3 text-left text-gray-300 text-xs uppercase tracking-wider font-medium border-b border-gray-700 whitespace-nowrap min-w-[120px]"
                     >
                       {col}
                     </th>
@@ -152,17 +206,17 @@ export default function PromoDashboardPage() {
               <tbody>
                 {rows.map((row, rowIdx) => (
                   <tr
-                    key={rowIdx}
+                    key={row.id}
                     className={rowIdx % 2 === 0 ? 'bg-[#0f172a]' : 'bg-[#1e293b]/50'}
                   >
-                    {row.map((cell, colIdx) => (
-                      <td key={colIdx} className="px-3 py-2 border-b border-gray-700/50">
+                    {row.cells.map((cell, colIdx) => (
+                      <td key={colIdx} className="px-3 py-2 border-b border-gray-700/50 min-w-[120px]">
                         <input
                           type="text"
                           className="w-full bg-transparent text-white text-sm outline-none placeholder:text-gray-600"
                           placeholder="..."
                           value={cell}
-                          onChange={(e) => handleCellChange(rowIdx, colIdx, e.target.value)}
+                          onChange={(e) => handleCellChange(row.id, colIdx, e.target.value)}
                         />
                       </td>
                     ))}

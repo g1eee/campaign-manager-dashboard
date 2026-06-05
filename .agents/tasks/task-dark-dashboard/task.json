@@ -1,7 +1,14 @@
 {
   "task_id": "task-dark-dashboard",
   "task_description": "Build a dark-themed promo dashboard page with left side navigation containing tabs (Tab Promo, Banner, Toko, IG Story, Host Live, Ads CPAS, Timeline) and editable tables for each tab. Users can type text into table cells and add rows. The design follows a dark navy/purple theme similar to Seller Analytics dashboards.",
-  "status": "in_progress",
+  "status": "completed",
   "feature_order": ["FEAT-001", "FEAT-002"],
-  "blocked_reason": null
+  "blocked_reason": null,
+  "verification": {
+    "build": "pass",
+    "tests": "skipped",
+    "test_quality": "skipped",
+    "docker_build": "skipped",
+    "summary": "npm run build passes with exit code 0. No test framework configured in this project. No Dockerfile present. The promo-dashboard page compiles as a static page at /promo-dashboard."
+  }
 }
