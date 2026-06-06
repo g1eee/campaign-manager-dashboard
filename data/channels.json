@@ -1,0 +1,65 @@
+[
+  {
+    "id": "tab-promo",
+    "name": "Tab Promo",
+    "icon": "tag",
+    "details": [
+      { "label": "Jenis", "value": "Flash Sale" },
+      { "label": "Format", "value": "Banner + Voucher" }
+    ]
+  },
+  {
+    "id": "banner",
+    "name": "Banner",
+    "icon": "image",
+    "details": [
+      { "label": "File Banner", "value": "banner-promo.png" }
+    ]
+  },
+  {
+    "id": "toko",
+    "name": "Toko",
+    "icon": "store",
+    "details": [
+      { "label": "Kategori", "value": "Fashion Muslim" },
+      { "label": "Chat Broadcast", "value": "Terjadwal" },
+      { "label": "Etalase", "value": "Promo Spesial" }
+    ]
+  },
+  {
+    "id": "ig-story",
+    "name": "IG Story",
+    "icon": "instagram",
+    "details": [
+      { "label": "File Flyer IGS", "value": "flyer-igs.jpg" },
+      { "label": "Link Produk", "value": "https://shopee.co.id/produk" },
+      { "label": "Jadwal Post", "value": "10:00 WIB" }
+    ]
+  },
+  {
+    "id": "host-live",
+    "name": "Host Live",
+    "icon": "video",
+    "details": [
+      { "label": "Jadwal", "value": "19:00 - 21:00 WIB" },
+      { "label": "Promo", "value": "Buy 2 Get Free Hijab" }
+    ]
+  },
+  {
+    "id": "ads-cpas",
+    "name": "Ads CPAS",
+    "icon": "megaphone",
+    "details": [
+      { "label": "File Flyer CPAS", "value": "flyer-cpas.jpg" }
+    ]
+  },
+  {
+    "id": "timeline",
+    "name": "Timeline",
+    "icon": "calendar",
+    "details": [
+      { "label": "Tanggal", "value": "12 - 18 Juni 2026" },
+      { "label": "Nama Promosi", "value": "Mid Year Sale" }
+    ]
+  }
+]

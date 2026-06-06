@@ -1,0 +1,9 @@
+[
+  { "order": 1, "name": "Brief Campaign", "icon": "clipboard" },
+  { "order": 2, "name": "Siapkan Asset", "icon": "package" },
+  { "order": 3, "name": "Jadwalkan Post", "icon": "calendar-clock" },
+  { "order": 4, "name": "Tayang di Channel", "icon": "send" },
+  { "order": 5, "name": "Monitor Biaya", "icon": "wallet" },
+  { "order": 6, "name": "Hitung Margin & NPM", "icon": "calculator" },
+  { "order": 7, "name": "Approve/Evaluasi", "icon": "check-circle" }
+]

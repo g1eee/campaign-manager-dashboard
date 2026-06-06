@@ -1,0 +1,11 @@
+[
+  { "id": "dashboard", "label": "Dashboard" },
+  { "id": "tab-promo", "label": "Tab Promo" },
+  { "id": "banner", "label": "Banner" },
+  { "id": "toko", "label": "Toko" },
+  { "id": "ig-story", "label": "IG Story" },
+  { "id": "host-live", "label": "Host Live" },
+  { "id": "ads-cpas", "label": "Ads CPAS" },
+  { "id": "timeline", "label": "Timeline" },
+  { "id": "approval", "label": "Approval" }
+]

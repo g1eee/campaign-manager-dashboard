@@ -1,0 +1,42 @@
+[
+  {
+    "id": "total-campaign",
+    "label": "Total Campaign",
+    "icon": "layers",
+    "value": 128,
+    "format": "number",
+    "trend": { "change": 12, "period": "dari bulan lalu" }
+  },
+  {
+    "id": "active-campaign",
+    "label": "Active Campaign",
+    "icon": "activity",
+    "value": 45,
+    "format": "number",
+    "trend": { "change": 8, "period": "dari bulan lalu" }
+  },
+  {
+    "id": "budget-terpakai",
+    "label": "Budget Terpakai",
+    "icon": "wallet",
+    "value": 385750000,
+    "format": "rupiah",
+    "trend": { "change": 15, "period": "dari bulan lalu" }
+  },
+  {
+    "id": "margin-rata-rata",
+    "label": "Margin Rata-rata",
+    "icon": "trending-up",
+    "value": 28.7,
+    "format": "percent1",
+    "trend": { "change": 4.2, "period": "dari bulan lalu" }
+  },
+  {
+    "id": "menunggu-approve",
+    "label": "Menunggu Approve",
+    "icon": "clock",
+    "value": 17,
+    "format": "number",
+    "trend": { "change": 5, "period": "dari minggu lalu" }
+  }
+]
